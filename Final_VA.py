@@ -70,8 +70,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('vini.trial.22032003@gmail.com', 'Vinni@2003')
-    server.sendmail('vini.trial.22032003@gmail.com', to, content)
+    server.login('vini.trial@gmail.com', 'abc')
+    server.sendmail('vini.trial@gmail.com', to, content)
     server.close()
 
 def transcribe_audio_to_text_and_save(filename):
